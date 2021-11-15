@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title> tripsGo </title>
+
+    <title>TripsGo | Landing, Corporate &amp; Business Templatee</title>a
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<main class="main" id="top">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="/"><img class="d-inline-block" src="assets/img/logo.png" width="100" alt="logo" /><span class="fw-bold text-primary ms-1"></span></a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent" style="justify-content: flex-end;">
+
+                <div class="text-center">
+                    <a  href="/login-adm" class="btn btn-default btn-rounded mb-4"> Administrador </a>
+                </div>
+                <div class="text-center">
+                    <a href="/login" class="text-primary btn btn-default btn-rounded mb-4"> Usuario </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="mt-7 py-0">
+        <div class="bg-holder w-50 bg-right d-none d-lg-block" style="background-image:url(assets/img/gallery/hero-section-1.png);">
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 py-5 py-xl-5 py-xxl-7 mt-6" id="initial-page">
+                    <h1 class="display-3 text-1000 fw-normal">Viaje com facilidade</h1>
+                    <h1 class="display-3 text-primary fw-bold">Descubra o novo</h1>
+                    <div class="pt-5">
+                        <nav >
+                            <div class="nav nav-tabs voyage-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="far fa-user"></i></button>
+                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"> <i class="fas fa-hotel"></i></button>
+                            </div>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                                </div>
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-0 overflow-hidden">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 px-0"><img class="img-fluid order-md-0 mb-4 h-100 fit-cover" src="assets/img/gallery/hero-section-2.png" alt="..." /></div>
+                <div class="col-lg-6 px-0 bg-primary-gradient bg-offcanvas-right">
+                    <div class="mx-6 mx-xl-8 my-8">
+                        <div class="align-items-center d-block d-flex mb-5"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/icons/locations.png" alt="..." />
+                            <div class="flex-1 align-items-center pt-2">
+                                <h5 class="fw-bold text-light"> Visite os melhores lugares </h5>
+                            </div>
+                        </div>
+                        <div class="align-items-center d-block d-flex mb-5"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/icons/schedule.png" alt="..." />
+                            <div class="flex-1 align-items-center pt-2">
+                                <h5 class="fw-bold text-light">Faça seus próprios planos</h5>
+                            </div>
+                        </div>
+                        <div class="align-items-center d-block d-flex mb-5"><img class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/icons/save.png" alt="..." />
+                            <div class="flex-1 align-items-center pt-2">
+                                <h5 class="fw-bold text-light">Otimize seu tempo com check-in e check-out</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-0 my-7">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-14 bg-white">
+                    <div class="carousel slide" id="carouselShare" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="row h-100">
+                                    <div class="col-12">
+                                        <div class="pt-5 ps-sm-7">
+                                            <h4 class="mb-2 text-1000">Mas como funciona o TripsGo?</h4>
+                                            <h2 class="mb-3 text-primary fs-3 fs-md-6">Queremos ajudar as pessoas a encontrar a melhor hospedagem para sua viagem.</h2>
+                                            <p class="fw-normal mb-0"> O TripsGo nasceu para otimizar o tempo gasto entre check-in e check-out durante do processo de hospedagem de hotéis. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row ps-sm-7 align-items-end">
+                            <div class="col-4 col-sm-6 position-relative z-index-2">
+                                <ol class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7">
+                                    <li class="active" data-bs-target="#carouselShare" data-bs-slide-to="0"></li>
+                                    <li data-bs-target="#carouselShare" data-bs-slide-to="1"></li>
+                                </ol>
+                            </div>
+                            <div class="col-8 col-sm-6 position-relative z-index-2 text-end"><a class="btn btn-lg text-secondary" href="#" role="button">Ler mais
+                                <svg class="bi bi-arrow-right ms-2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                                </svg></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-7 overflow-hidden" id="places">
+        <div class="container bg-offcanvas-gray-right">
+            <div class="row gx-2 mb-2">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="bg-primary-gradient bg-offcanvas h-100">
+                        <div class="row g-0 justify-content-end">
+                            <div class="col-12">
+                                <div class="p-6 py-md-5 px-md-3 py-lg-8 text-light"><img class="mb-5" src="assets/img/icons/icon-location.svg" alt="..." />
+                                    <h2 class="mb-2 text-light">Lugares populares</h2>
+                                    <p>Aproveite para conhecer os melhores <br class="d-none d-lg-block" /> destinos e viajar de forma fácil, segura e <br class="d-none d-lg-block" /> inovadora!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/agra.png" height="375" alt="..." />
+                        <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                            <div class="mt-auto px-4 mb-1">
+                                <h3 class="fs-1 fs-md-2 text-white">Agra</h3><span class="text-light fs--1 me-1">É uma cidade do estado de Uttar Pradesh, no norte da Índia. Ela abriga o emblemático Taj Mahal, um mausoléu construído para a esposa do imperador mogol Shah Jahan, Mumtaz Mahal (que morreu ao dar à luz em 1631).</span>
+                            </div>
+                        </div><a class="stretched-link" href="#!"></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/kualalumpur.png" height="375" alt="..." />
+                        <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                            <div class="mt-auto px-4 mb-1">
+                                <h3 class="fs-1 fs-md-2 text-white">Kuala Lumpur</h3><span class="text-light fs--1 me-1">É a capital da Malásia. Sua moderna linha do horizonte é dominada pelas Torres Petronas, dois arranha-céus revestidos de vidro e aço com temas islâmicos e 451 metros de altura.</span>
+                            </div>
+                        </div><a class="stretched-link" href="#!"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/munich.png" height="375" alt="..." />
+                                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                                    <div class="mt-auto px-4 mb-1">
+                                        <h3 class="fs-1 fs-md-2 text-white">Munich</h3><span class="text-light fs--1 me-1">É a capital da Bavária, abriga prédios centenários e inúmeros museus. A cidade é conhecida pela celebração anual Oktoberfest e pelas cervejarias, inclusive a famosa Hofbräuhaus, fundada em 1589.</span>
+                                    </div>
+                                </div><a class="stretched-link" href="#!"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="row g-2">
+                        <div class="col-12">
+                            <div class="card card-span h-100 text-white"><img class="img-fluid h-100 w-100" src="assets/img/gallery/paris.png" height="375" alt="..." />
+                                <div class="card-img-overlay ps-0 d-flex flex-column justify-content-between bg-voyage-gradient">
+                                    <div class="mt-auto px-4 mb-1">
+                                        <h3 class="fs-1 fs-md-2 text-white">Paris</h3><span class="text-light fs--1 me-1">É a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e cultura. Sua paisagem urbana do século XIX é cortada por avenidas largas e pelo rio Sena.</span>
+                                    </div>
+                                </div><a class="stretched-link" href="#!"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                    <div class="bg-secondary-gradient h-100 d-flex align-items-center">
+                        <div class="text-light p-4 p-sm-6 p-lg-0 px-xxl-6">
+                            <p class="fs-1 px-4 mb-6">E diversos outros destinos íncriveis!</p><a class="btn btn-lg text-light fs-2" href="#initial-page" role="button">Ver mais
+                            <svg class="bi bi-arrow-right-circle ms-5" xmlns="" width="55" height="55" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                            </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-0 my-7">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-14 bg-white">
+                    <div class="row h-100">
+                        <div class="col-12">
+                            <div class="pt-5 ps-sm-7">
+                                <h4 class="mb-2 text-1000">E como fazemos isso?</h4>
+                                <h2 class="mb-3 text-primary fs-3 fs-md-6">Utilizamos tecnologia de ponta em nosso app!</h2>
+                                <p class="fw-normal mb-0">Através de IOT (Internet das Coisas) conseguimos criar um sistema de check-in automatizado, onde o cliente faz a reserva por nossa plataforma e através de um QR code tem acesso à sua hospedagem.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row ps-sm-7 align-items-end">
+                        <div class="col-4 col-sm-6 position-relative z-index-2">
+                            <ol class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7">
+                                <li class="active" data-bs-target="#carouselShare" data-bs-slide-to="0"></li>
+                                <li data-bs-target="#carouselShare" data-bs-slide-to="1"></li>
+                            </ol>
+                        </div>
+                        <div class="col-8 col-sm-6 position-relative z-index-2 text-end"><a class="btn btn-lg text-secondary" href="#" role="button">Ler mais
+                            <svg class="bi bi-arrow-right ms-2" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                            </svg></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-7 overflow-hidden" id="hotels">
+        <div class="container bg-offcanvas-gray-right">
+            <div class="row gx-2">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="bg-primary-gradient h-100 d-flex align-items-end">
+                        <div class="row g-0 justify-content-start">
+                            <div class="col-xl-9">
+                                <div class="p-3 px-lg-4 text-light"><img class="mb-5" src="assets/img/icons/icon-hotel.svg" alt="..." />
+                                    <h2 class="mb-3 text-light">Descubra nossas melhores reservas para acomodação </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-8 gy-2">
+                    <div class="bg-secondary-gradient h-100 d-flex align-items-center">
+                        <div class="text-light py-6">
+                            <div class="row">
+                                <div class="col-12 col-xl-6">
+                                    <p class="fs-1 px-5">Gostou? Faça já seu cadastro e aproveite todas as possibilidades que o TripsGo pode te oferecer.</p>
+                                </div>
+                                <div class="col-12 col-xl-6 text-end"><a class="btn btn-lg text-light fs-1 fs-sm--1 fs-md-1 px-5" href="#initial-page" role="button">CADASTRAR
+                                    <svg class="bi bi-arrow-right-circle ms-3" xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path>
+                                    </svg></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-0 pb-8">
+        <div class="container-fluid container-lg">
+            <div class="col-lg-7 mx-auto text-center mb-6">
+                <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Veja o que as pessoas estão achando de suas hospedagens</h5>
+            </div>
+            <div class="row h-100 g-2 justify-content-center">
+                <div class="col-sm-9 col-md-4 mb-3 mb-md-0 h-100">
+                    <div class="card card-span text-white h-100"><img class="img-card h-100" src="assets/img/gallery/blog-1.png" alt="..." />
+                        <div class="card-body px-xl-5 px-md-3 pt-0 pb-7">
+                            <div class="d-flex justify-content-between align-items-center bg-100 mt-n5 me-auto"><img src="assets/img/gallery/author-1.png" width="60" alt="..." />
+                                <div class="d-flex flex-1 justify-content-around">
+                                    <span class="text-900 text-center"><i class="fas fa-heart text-primary"></i></span> <h5 class="text-900 mt-3">João de Olivera.</h5></div>
+                            </div>
+                            <h3 class="fw-bold text-1000 mt-5 text-truncate">Os 15 melhores dias de viagem pro nordestes </h3>
+                            <p class="text-900 mt-3">A estrutura do hotel com esse novo sistema de check-in e check-out simplesmente facilita a vida.</p><a class="btn btn-lg text-900 fs-1 px-0 hvr-icon-forward" href="#!" role="button">Ler mais
+                            <svg class="bi bi-arrow-right-short hover-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"> </path>
+                            </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-4 mb-3 mb-md-0 h-100">
+                    <div class="card card-span text-white h-100"><img class="img-card h-100" src="assets/img/gallery/blog-2.png" alt="..." />
+                        <div class="card-body px-xl-5 px-md-3 pt-0 pb-7">
+                            <div class="d-flex justify-content-between align-items-center bg-100 mt-n5 me-auto"><img src="assets/img/gallery/author-2.png" width="60" alt="..." />
+                                <div class="d-flex flex-1 justify-content-around">
+                                    <span class="text-900 text-center"><i class="fas fa-heart text-primary"></i></span> <h5 class="text-900 mt-3">Maria Clara.</h5></div>
+                            </div>
+                            <h3 class="fw-bold text-1000 mt-5 text-truncate">O sistema inovador me deixou surpresa!</h3>
+                            <p class="text-900 mt-3">Nunca vi nada parecido, o sistema de check-in e check-out vale muito o preço, não preciso mais gastar com funcionários.</p><a class="btn btn-lg text-900 fs-1 px-0 hvr-icon-forward" href="#!" role="button">Ler mais
+                            <svg class="bi bi-arrow-right-short hover-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"> </path>
+                            </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-4 mb-3 mb-md-0 h-100">
+                    <div class="card card-span text-white h-100"><img class="img-card h-100" src="assets/img/gallery/blog-3.png" alt="..." />
+                        <div class="card-body px-xl-5 px-md-3 pt-0 pb-7">
+                            <div class="d-flex justify-content-between align-items-center bg-100 mt-n5 me-auto"><img src="assets/img/gallery/author-3.png" width="60" alt="..." />
+                                <div class="d-flex flex-1 justify-content-around">
+                                    <span class="text-900 text-center"><i class="fas fa-heart text-primary"></i></span> <h5 class="text-900 mt-3">Jeferson Lucca. </h5></div>
+                            </div>
+
+                            <h3 class="fw-bold text-1000 mt-5 text-truncate">Uma das melhores experiências com viagens.</h3>
+                            <p class="text-900 mt-3">Nunca encontrei uma plataforma que pudesse oferecer tudo o que eu precisava. Agora encontrei!</p><a class="btn btn-lg text-900 fs-1 px-0 hvr-icon-forward" href="#!" role="button">Ler mais
+                            <svg class="bi bi-arrow-right-short hover-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"> </path>
+                            </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-holder" style="background-image:url(assets/img/gallery/cta-bg.png);background-position:center;background-size:cover;">
+        </div>
+        <div class="container">
+            <div class="row flex-center">
+                <div class="col-lg-6 text-center"><img class="mb-5 mb-lg-0" src="assets/img/gallery/cta-mobile.png" alt="..." /></div>
+                <div class="col-lg-6 text-center">
+                    <h1 class="fs-6 pe-xxl-10">Breve nas lojas</h1>
+                    <div class="mt-4 pe-xxl-10"><a href="https://play.google.com/store/apps" target="_blank"><img class="me-3" src="assets/img/gallery/google-play.png" width="170" alt="..." /></a><a href="https://www.apple.com/app-store/" target="_blank"> <img src="assets/img/gallery/app-store.png" width="170" alt="..." /></a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-0 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-4 col-lg-6">
+                    <div class="py-7"><img class="d-inline-block" src="assets/img/logo.png" width="50" alt="logo" /><span class="fw-bold fs-4 text-primary ms-2"></span>
+                        <ul class="list-unstyled mt-4">
+                            <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Notícias</a></li>
+                            <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Termos &amp; Condições</a></li>
+                            <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Privacidade</a></li>
+                            <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">Sobre nós</a></li>
+                            <li class="mb-2"><a class="text-800 fw-bold text-decoration-none" href="#!">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-8 col-lg-6 bg-primary-gradient bg-offcanvas-right">
+                    <div class="p-3 py-7 p-md-7">
+                        <p class="text-light"><i class="fas fa-phone-alt me-3"></i><span class="text-light">+55 (11) 97777 8888</span></p>
+                        <p class="text-light"><i class="fas fa-envelope me-3"></i><span class="text-light">tripsgo@gmail.com</span></p>
+                        <p class="text-light"><i class="fas fa-map-marker-alt me-3"></i><span class="text-light lh-lg">São Paulo<br/>Brasil</span></p>
+                        <div class="mt-6"><a href="#!"> <img class="me-3" src="assets/img/icons/facebook.svg" alt="..." /></a><a href="#!"> <img class="me-3" src="assets/img/icons/twitter.svg" alt="..." /></a><a href="#!"> <img class="me-3" src="assets/img/icons/instagram.svg" alt="..." /></a></div>
+                        <p class="mt-3 text-light text-center text-md-start"> Feito com&nbsp;
+                            <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#EB6453" viewBox="0 0 16 16">
+                                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
+                            </svg>&nbsp;by&nbsp;<a class="text-light" href="https://themewagon.com/" target="_blank">equipe Tripsgo </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script src="vendors/@popperjs/popper.min.js"></script>
+<script src="vendors/bootstrap/bootstrap.min.js"></script>
+<script src="vendors/is/is.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="vendors/fontawesome/all.min.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
